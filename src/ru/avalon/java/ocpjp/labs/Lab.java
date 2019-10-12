@@ -1,5 +1,8 @@
 package ru.avalon.java.ocpjp.labs;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+
 public class Lab {
 
     /**
@@ -11,7 +14,8 @@ public class Lab {
      *
      * @param args аргументы командной строки
      */
-    public static void main(String ... args) {
+    public static void main(String ... args) throws IOException {
+//        String[] ar = {"-e", "Inheritance"};
         Exercise exercise = Exercise.create(args);
         try {
             exercise.run();
@@ -20,7 +24,7 @@ public class Lab {
         }
 
         /*
-         * TODO(Студент): Пользуясь терминалом, запустить все задания лабораторной работы
+         * Пользуясь терминалом, запусщены все задания лабораторной работы
          * 1. Запустить задание OneDimensionalArrays
          * 2. Запустить задание TwoDimensionalArrays
          * 3. Запустить задание Inheritance
